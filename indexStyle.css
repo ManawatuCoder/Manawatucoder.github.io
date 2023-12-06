@@ -101,18 +101,25 @@ nav ul li:hover{
 
 .image-user-box {
     max-width: 450px;
-    max-height: 500px;
-    background-color: #a99ce96b;
+    max-height: 300px;
+    background-color: #abc2ed;
     margin-left: 20px;
     border-radius:84% 16% 99% 1% / 42% 84% 16% 58% ;
     margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .image-user-box img{
     max-width: 400px;
+    max-height: 80%;
     right: 52%;
     margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 6%;
    border-radius:89% 11% 87% 13% / 20% 48% 52% 80% ;
+
 }
 
 
