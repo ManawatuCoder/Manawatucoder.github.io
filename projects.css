@@ -99,6 +99,7 @@ nav ul li:hover{
     opacity: 0.7;
     transition: opacity 0.5s;
     display:grid;
+    margin-bottom: 16px;
   }
 
   .project:hover {
