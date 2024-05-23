@@ -72,3 +72,23 @@ nav ul li:hover {
     flex-direction: column;
     padding-left: 5%
 }
+
+.projects-wrapping {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+    padding: 0 20px; /* Added padding on left and right */
+}
+
+.project {
+    flex: 1 1 300px;
+    max-width: 300px;
+    background-color: #4a8780;
+    padding: 16px;
+    margin: 16px; /* Adjusted margin */
+    opacity: 0.7;
+    transition: opacity 0.5s;
+    display: grid;
+}
