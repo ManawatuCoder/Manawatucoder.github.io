@@ -35,6 +35,7 @@ nav ul li {
     margin: 10px 30px;
     position: relative;
     z-index: 100;
+    padding-left: 5%;
 }
 
 nav ul li a {
