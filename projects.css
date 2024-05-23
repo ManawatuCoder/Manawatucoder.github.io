@@ -83,12 +83,21 @@ nav ul li:hover {
 }
 
 .project {
-    flex: 1 1 300px;
-    max-width: 300px;
+    flex: 1 1 calc(33.33% - 32px); /* Adjusted width to be one-third of the container width */
+    max-width: calc(33.33% - 32px); /* Adjusted max-width for consistency */
     background-color: #4a8780;
     padding: 16px;
-    margin: 16px; /* Adjusted margin */
+    margin: 16px;
     opacity: 0.7;
     transition: opacity 0.5s;
     display: grid;
+    border-radius: 8px;
+}
+
+/* Adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+    .project {
+        flex: 1 1 calc(50% - 32px); /* Two projects per row on smaller screens */
+        max-width: calc(50% - 32px); /* Adjusted max-width for consistency */
+    }
 }
