@@ -1,32 +1,33 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 *{
-	margin:0;
-	padding:5%;
-	box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-body{
-	background-color: rgb(237, 237, 233);
-}
-
-nav{
+.landing-page {
     width: 100%;
+    height: 100%;
+    padding: 0 10%;
+    background-color: rgb(237, 237, 233);
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-	  margin-top: 20px;
-    padding:  0 10%;
-
+    flex-direction: column;
 }
 
-nav img{
+.landing-page nav img{
     width: 90px;
     height: 90px;
     border-radius: 20px;
+}
+
+nav{
+   width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0px;
 }
 
 nav ul li{
@@ -52,171 +53,99 @@ nav ul li:hover{
 
 }
 
-.section-title {
-    /* background-color: #35ab9d; */
-    font-weight: bold;
-    align-self: center;
-    color: #3fa5b5;
-    padding-bottom: 10px ;
-    /* margin-bottom: 30px; */
-    margin-top: 30px;
-}
-
-.section-description{
-  align-self: center;
-  text-align: justify;
-  letter-spacing: 1px;
-
-}
-
-.projects-section {
-    width: 100%;
-    /* height: 90vh; */
+.about-me{
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-      /* Use this to help you visualise spaces  */
+    /* Use this to help you visualise spaces  */
     /* border: 2px solid rgb(255, 0, 212); */
-
-  }
-
-  .projects-wrapping {
-    display: flex;
     justify-content: space-evenly;
-    align-items: center;
-    height: 100%;
-    margin-top: 20px;
-    /* border: 2px solid rgb(0, 221, 255); */
 
-  }
-
-  .project {
-    width: 300px;
-    background-color: #4a8780;
-    padding: 16px 16px;
-    position: relative;
-    opacity: 0.7;
-    transition: opacity 0.5s;
-    display:grid;
-    margin-bottom: 16px;
-  }
-
-  .project:hover {
-    opacity: 1;
-  }
-
-  /* Use this if you will like to display projects in a different way */
-  /* .project:first-child {
-    align-self: flex-start;
-  }
-
-  .project:last-child {
-    align-self: flex-end;
-  } */
-
-  .project-img {
-    width: 100%;
-    border-radius: 8px;
-  }
-
-  .project-name {
-    font-size: 30px;
-    font-weight: bold;
-    color: #fff;
-    margin-top: 20px;
-    text-align: center;
 }
 
-  .project span {
-    font-size: 15px;
-    color: #fff;
-    text-align: center;
-  }
+.text-box{
+    /* flex: 1; */
+    margin-top: 20px;
+    margin-right: 50px;
+    padding: 20px;
+    /* Use this to help you visualise spaces - to be removed  */
+    /* border: 2px solid rgb(85, 85, 13); */
 
-  .project-tech {
-    /* display: flex;    */
-    justify-content: space-evenly;
-    margin: 20px 20px;
-    list-style-type:square;
-    color: #fff;
-  }
+}
 
-  .project-tech i {
-    font-size: 12px;
-    padding-right: 10%;
-    color: #fff;
-  }
+.text-box span{
+    padding: 5px 50px;
+    margin: 5px;
+    border-radius:100px 0px 100px 0px;
+    background:-webkit-linear-gradient(321deg, #a99ce9 0%, #29847a 85%);
 
-  .projects-btn {
-    background-color: rgba(206, 204, 214, 0.42);
-    color: #fff;
-    padding: 2px 20px;
-    border-radius: 30px;
-    letter-spacing: 2px;
-    text-align: center;
-  }
+}
+.text-box h1{
+    font-size: 45px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    color: #3fa5b5;
+    z-index: 100;
+}
 
-  .description-btn {
-    width: 35px;
-    height: 35px;
-    background-color: #393539;
-    position: absolute;
-    top: -15px;
-    right: -15px;
-    border-radius: 50px;
+.text-box a{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background: #29847a;
+    padding: 10px 30px;
+    font-size: 18px;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+
+.image-user-box {
+    max-width: 450px;
+    max-height: 300px;
+    background-color: #abc2ed;
+    margin-left: 20px;
+    border-radius:84% 16% 99% 1% / 42% 84% 16% 58% ;
+    margin: 20px;
     display: flex;
-    align-items: center;
-    padding: 8px;
-    cursor: pointer;
-    z-index: 50;
-    transition: transform 0.5s;
-  }
-
-  /* rotates the button */
-  .change.description-btn {
-    transform: rotate(405deg);
-  }
-
-  .description-btn-line {
-    width: 100%;
-    height: 1.5px;
-    background-color: #ddd;
-  }
-  .description {
-    width: 100%;
-    height: 100%;
-    background-color: #cbc4ef;
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 16px;
-    transform: scale(0); /*this hides the description*/
-    transform-origin: top-right;
-    border-radius: 500px 0 80px 500px;
-    transition: all 0.5s;
-  }
+}
 
-  .change.description {
-    transform: scale(1);
-    border-radius: 0;
-  }
+.image-user-box img{
+    max-width: 400px;
+    max-height: 80%;
+    right: 52%;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 6%;
+   border-radius:89% 11% 87% 13% / 20% 48% 52% 80% ;
 
-  .description-heading {
+}
+
+
+.socials{
+    margin-top: 50px;
+    margin-left: 450px;
+    max-width: 600px;
+    /* Use this to help you visualise spaces  */
+    /* border: 2px solid rgb(208, 255, 0); */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+
+}
+
+.fa-brands {
+    padding: 20px;
     font-size: 30px;
-    font-weight: bold;
-    color: #3fa5b5;
-    margin-bottom: 32px;
+    width: 300px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    color: #ab8acc;
   }
 
-  .description-paragraph {
-    font-size: 16px;
-    color: #2d7782;
-    padding: 16px 16px;
-    text-align: justify;
-    /* letter-spacing: 1.5px; */
-    text-indent: 32px;
-  }
+  .fa-brands:hover {
+    opacity: 0.7;
+    color: #000;
+}
